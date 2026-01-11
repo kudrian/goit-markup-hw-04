@@ -207,9 +207,11 @@ img {
   max-width: calc((100% - 72px) / 4);
 }
 .icon-container {
-  width: 264px;
-  height: 112px;
-  padding: 24px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 24px 0;
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -326,7 +328,8 @@ img {
   height: 16px;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
   background-color: #404bbf;
 }
 
@@ -444,4 +447,35 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+}
+
+.social-links-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+}
+.social-links-footer .footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #31d0aa;
+}
+
+.link-icon-footer {
+  fill: #f4f4fd;
+  width: 24px;
+  height: 24px;
 }
